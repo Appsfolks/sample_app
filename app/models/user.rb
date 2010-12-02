@@ -12,7 +12,7 @@
 require 'digest'
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password_confirmation
+  attr_accessible :name, :email, :password,:password_confirmation
   
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
@@ -49,7 +49,7 @@ class User < ActiveRecord::Base
       secure_hash("#{salt}--#{string}")
     end
     
-    def make_salt(password)
+    def make_salt
       secure_hash("#{Time.now.utc}--#{password}")
     end
     
