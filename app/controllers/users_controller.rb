@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   
   def index
     @title = "All Users"
-    @users = User.paginate(:page => params[:page])
+    @users = User.All.paginate(:page => params[:page])
     @curr_user = current_user
   end
   
