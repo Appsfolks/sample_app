@@ -6,6 +6,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'gravatar_image_tag'
 
+gem 'faker'
+
  group :development  do
   gem 'rspec-rails' , '2.2'
   gem 'annotate' 

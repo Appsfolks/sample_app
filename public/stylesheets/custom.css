@@ -1,5 +1,7 @@
 .container {
 	width: 710px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 body {
@@ -117,6 +119,7 @@ input:focus {
    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 2);
 }
 
+
 /*Rounded Corners */
 
 .round{
@@ -204,4 +207,31 @@ div.field, div.actions {
 #error_explanation ul li { 
 	font-size: 12px; 
 	list-style: square;
+}
+
+/* users list page */
+
+ul.users {
+
+	margin: 0 0 0 30px;
+	padding: 0;
+	width: 12.5%;
+}
+.users li { 
+	list-style: none;
+	display:block;
+	width:400px;
+	border-width:2px;
+	
+	background-color: #ffffff;
+	color: #daa520;
+	border: .2em solid #069fff;
+	font-weight: 600;
+
+	padding: .3em;
+	margin-bottom: 1em;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-border-radius: 10px;
 }

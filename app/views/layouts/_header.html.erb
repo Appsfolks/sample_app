@@ -4,6 +4,7 @@
 		<ul>
 			<li> <%= link_to_unless_current "Home", root_path %></li>
 			<% if signed_in? %>
+				<li><%= link_to "Users", users_path %></li>
 				<li><%= link_to_unless_current "Profile", current_user %></li> 
 			
 				<li><%= link_to "Settings", "/users/#{current_user.id}/edit" %></li>
