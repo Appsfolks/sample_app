@@ -1,9 +1,9 @@
 <footer>
 	<nav class="round">
 		<ul>
-			<li> <%= link_to "About", about_path %> </li>
-			<li> <%= link_to "Contact", contact_path %> </li>
-			<li> <%= link_to "Privacy Policy", "#" %> </li>
+			<li> <%= link_to_unless_current "About", about_path %> </li>
+			<li> <%= link_to_unless_current "Contact", contact_path %> </li>
+			<li> <%= link_to_unless_current "Privacy Policy", "#" %> </li>
 		</ul>
 	</nav>
 </footer>

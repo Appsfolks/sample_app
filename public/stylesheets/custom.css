@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: #cff;
+	background-image: url('/images/body-bg.jpg');
 }
 
 header {
@@ -74,6 +74,8 @@ nav ul li a:hover {
 	text-decoration: underline;
 }
 
+
+
 /*Sign up Button */
 
 a.signup_button {
@@ -83,13 +85,37 @@ a.signup_button {
 	text-align: center;
 	width: 190px;
 	color: #fff;
-	background: #006400;
-	font-size; 120%;
+	background-image: url('/images/button-bg.png');
+	font-size; 200%;
 	font-weight: bold;
 	padding: 20px;
 	
 }
 
+a.signup_button:hover {
+	text-decoration: none;
+	background-image: url('/images/button-over-bg.png');
+}
+
+/* Signup styling */
+
+.textInput
+{
+border: 2px solid #999999;
+height: 30px;
+background: #555555;
+color: #069;
+font-size: 1.3em;
+margin-left: auto;
+margin-right: auto;
+padding: 3px;
+}
+
+input:focus {
+	box-shadow: 0 0 5px rgba(6, 130, 255, 2);
+   -webkit-box-shadow: 0 0 5px rgba(6, 130, 255, 2); 
+   -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 2);
+}
 
 /*Rounded Corners */
 

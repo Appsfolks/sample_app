@@ -2,11 +2,13 @@
 	<%= link_to logo, root_path%>
 	<nav class="round">
 		<ul>
-			<li> <%= link_to("Home", root_path)%></li>
+			<li> <%= link_to_unless_current "Home", root_path %></li>
 			<% if signed_in? %>
-				<li><%= link_to "Profile", current_user %></li> 
+				<li><%= link_to_unless_current "Profile", current_user %></li> 
+			
+				<li><%= link_to "Settings", "/users/#{current_user.id}/edit" %></li>
 			<% end %>
-			<li> <%= link_to("Help", "#")%></li>
+			<li> <%= link_to_unless_current "Help", "#" %></li>
 			<% if signed_in? %>
 				<li> <%= link_to "Sign Out", signout_path, :method => :delete %></li>
 			<% else %>

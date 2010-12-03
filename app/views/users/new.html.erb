@@ -1,21 +1,21 @@
 <h1>Sign up</h1>
 	<%= form_for(@user) do |f| %> 
-		<%= render 'shared/error_messages' %>
+		<%= render 'shared/error_messages', :object => f.object %>
 		<div class="field">
 			<%= f.label :name %><br />
-			<%= f.text_field :name %> 
+			<%= f.text_field :name, :class => 'textInput round' %> 
 		</div>
 		<div class="field"> 
 			<%= f.label :email %><br /> 
-			<%= f.text_field :email %>
+			<%= f.text_field :email,:class => 'textInput round' %>
 		</div> 
 		<div class="field">
 			<%= f.label :password %><br />
-			<%= f.password_field :password %> 
+			<%= f.password_field :password , :class => 'textInput round'%> 
 		</div>
 		<div class="field"> 
 			<%= f.label :password_confirmation, "Confirmation" %><br /> 
-			<%= f.password_field :password_confirmation %>
+			<%= f.password_field :password_confirmation,:class => 'textInput round' %>
 		</div> 
 		<div class="actions">
 			<%= f.submit "Sign up" %> 
