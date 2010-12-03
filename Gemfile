@@ -17,7 +17,7 @@ end
 group :production do
   gem 'rspec-rails', '2.2'
   gem 'annotate'
-  gem 'faker' '0.3.1'
+  gem 'faker', '0.3.1'
 end
 
 group :test do

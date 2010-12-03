@@ -1,12 +1,4 @@
 SampleApp::Application.routes.draw do
-  
-  get "relationships/create"
-
-  get "relationships/destroy"
-
-  get "microposts/create"
-
-  get "microposts/destroy"
 
   resources :sessions , :only => [:new, :create, :destroy]
   resources :users do
