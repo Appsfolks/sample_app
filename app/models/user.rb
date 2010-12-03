@@ -11,7 +11,7 @@
 #
 require 'digest'
 class User < ActiveRecord::Base
-  attr_accessor :password
+  attr_accessor :password, :admin
   attr_accessible :name, :email, :password,:password_confirmation
   
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -30,6 +30,10 @@ class User < ActiveRecord::Base
     #compare the encrypted version of the submitted password with the encrypted password in the db
     encrypted_password == encrypt(submitted_password)
   end   
+  
+  def admin?
+    user.admin?
+  end
   
   def self.authenticate(email, submitted_password)
     

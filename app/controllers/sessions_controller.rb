@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
       sign_in user
+      @curr_user = user
       redirect_back_or user
     end
   end

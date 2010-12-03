@@ -1,0 +1,6 @@
+	<% # Parameters: curr_user %>
+	<li>
+		<%= gravatar_for user, :size => 30 %>
+		<%= link_to user.name, user %>
+		<%= link_to "Follow","#", :class => 'follow_button'%>
+	</li>

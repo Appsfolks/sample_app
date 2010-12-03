@@ -235,3 +235,24 @@ ul.users {
 	-webkit-border-radius: 10px;
 	-border-radius: 10px;
 }
+
+a.follow_button {
+	float: right;
+	
+	width: 30px;
+	height: 3px;
+	color: #fff;
+	background-image: url('/images/button-bg.png');
+	font-size: 75%;
+	padding: 15px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-border-radius: 10px;
+	margin-bottom: 10px;
+	
+}
+
+a.follow_button:hover {
+	text-decoration: none;
+	background-image: url('/images/button-over-bg.png');
+}
