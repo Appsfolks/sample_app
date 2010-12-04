@@ -7,6 +7,7 @@ class RelationshipsController < ApplicationController
       format.html { redirect_to @user }
       format.js 
     end
+    Notifier.follow_confirmation(@user,current_user).deliver
   end
 
   def destroy

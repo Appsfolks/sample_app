@@ -28,7 +28,8 @@ class UsersController < ApplicationController
     if @user.save
       #handle user save
       sign_in @user
-      flash[:success] = "Welcome to Sample App"
+      flash[:success] = "Welcome to Kaargo!"
+      Notifier.registration_confirmation(@user).deliver   # send welcome email
       redirect_to @user
     else
       @title = 'Sign up'

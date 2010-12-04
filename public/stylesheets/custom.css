@@ -257,6 +257,11 @@ a.follow_button:hover {
 	background-image: url('/images/button-over-bg.png');
 }
 
+.delete_user_link {
+	float:right;
+	vertical-align: center;
+	display:block;
+}
 
 /* Microposts */
 

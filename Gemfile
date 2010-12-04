@@ -8,6 +8,8 @@ gem 'gravatar_image_tag'
 
 gem 'will_paginate', '3.0.pre'
 
+gem "mail"
+
 group :development  do
   gem 'rspec-rails' , '2.2'
   gem 'annotate'

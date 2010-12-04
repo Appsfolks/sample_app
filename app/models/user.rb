@@ -39,8 +39,8 @@ class User < ActiveRecord::Base
     encrypted_password == encrypt(submitted_password)
   end   
   
-  def admin?
-    user.admin?
+  def admin_user?
+    self.admin?
   end
   
   def feed
@@ -65,6 +65,7 @@ class User < ActiveRecord::Base
   
   def follow!(followed)
     relationships.create!(:followed_id => followed.id)
+    
   end
   
   def unfollow!(followed)
