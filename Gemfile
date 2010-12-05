@@ -10,6 +10,8 @@ gem 'will_paginate', '3.0.pre'
 
 gem "mail"
 
+gem 'jquery-rails'
+
 group :development  do
   gem 'rspec-rails' , '2.2'
   gem 'annotate'

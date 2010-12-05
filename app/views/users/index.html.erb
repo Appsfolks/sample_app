@@ -1,6 +1,9 @@
-<h1>All users</h1>
-	<%= will_paginate %>
-	<ul class="users"> 
-		<%= render @users %>
- 	</ul>
+<div>
+<h1>Users </h1>
+<%= render "search"%>
+</div>
+<%= will_paginate %>
+<div id="usersList" class = "searchResults">
+	<%= render "search_results" %>
+</div>
 <%= will_paginate %>

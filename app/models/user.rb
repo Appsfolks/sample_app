@@ -72,6 +72,14 @@ class User < ActiveRecord::Base
     relationships.find_by_followed_id(followed).destroy
   end
   
+  def self.search(search)
+    if search
+      where('name LIKE ?', "%#{search}%")
+    else
+      scoped
+    end
+  end
+  
   private
   
     def encrypt_password

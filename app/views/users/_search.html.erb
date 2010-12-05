@@ -1,0 +1,6 @@
+<%= form_tag users_path, :id => "users_search_form",:method=>'get',:remote=>true do %>
+	<div class="search">
+		<%= text_field_tag :search, params[:search], :class=>"searchInput round"%>
+		<%= submit_tag "Search", :name=>nil%>
+	</div>
+	<% end %>
